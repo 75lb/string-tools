@@ -1,7 +1,7 @@
 {
   "name": "string-ting",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Some useful functions for working with strings",
   "repository": "https://github.com/75lb/string-ting.git",
   "main": "./lib/string-ting.js",
