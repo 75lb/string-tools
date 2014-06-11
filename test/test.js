@@ -8,7 +8,7 @@ test("escapeRegExp", function(t){
 
 test("escapeRegExp", function(t){
     t.equal(s.fill("a", 10), "aaaaaaaaaa");
-    // t.equal(s.fill("ab", 10), "ababababab"); // only works this way on 0.11
+    // t.equal(s.fill("ab", 10), "ababababab"); // only works this way on 0.11, not 0.10
     t.end();
 });
 
@@ -16,5 +16,10 @@ test("escapeRegExp", function(t){
     t.equal(s.padRight("clive", 1), "clive");
     t.equal(s.padRight("clive", 1, "-"), "clive");
     t.equal(s.padRight("clive", 10, "-"), "clive-----");    
+    t.end();
+});
+
+test("repeat", function(t){
+    t.equal(s.repeat("ab", 3), "ababab");
     t.end();
 });
