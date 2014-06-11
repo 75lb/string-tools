@@ -15,6 +15,7 @@ Some useful functions for working with strings
 * [escapeRegExp()](#module_string-ting.escapeRegExp)
 * [fill(fillWith, len)](#module_string-ting.fill)
 * [padRight(input, width, [padWith])](#module_string-ting.padRight)
+* [repeat(input, times)](#module_string-ting.repeat)
 
 
 
@@ -28,7 +29,7 @@ some cross platform symbols (`tick` and `cross`)
 
 
 <a name="module_string-ting.escapeRegExp"></a>
-###s.escapeRegExp()
+###escapeRegExp()
 escape special regular expression characters
 
 
@@ -44,7 +45,7 @@ escape special regular expression characters
 
 
 <a name="module_string-ting.fill"></a>
-###s.fill(fillWith, len)
+###fill(fillWith, len)
 Create a new string filled with the supplied character
 
 
@@ -65,7 +66,7 @@ Create a new string filled with the supplied character
 
 
 <a name="module_string-ting.padRight"></a>
-###s.padRight(input, width, [padWith])
+###padRight(input, width, [padWith])
 Add padding to the right of a string
 
 
@@ -85,6 +86,20 @@ Add padding to the right of a string
 > w.padRight("clive", 10, "-")
 'clive-----'
 ```
+
+
+
+<a name="module_string-ting.repeat"></a>
+###repeat(input, times)
+returns the input string repeated the specified number of times
+
+
+- input `string` input string to repeat  
+- times `number` the number of times to repeat  
+
+
+**Returns**: `string`
+
 
 
 
