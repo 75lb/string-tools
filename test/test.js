@@ -23,3 +23,8 @@ test("repeat", function(t){
     t.equal(s.repeat("ab", 3), "ababab");
     t.end();
 });
+
+test("clipLeft", function(t){
+    t.equal(s.clipLeft("abcdefghijkl", 5), "...kl");
+    t.end();
+});
