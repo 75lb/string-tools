@@ -28,3 +28,11 @@ test("clipLeft", function(t){
     t.equal(s.clipLeft("abcdefghijkl", 5), "...kl");
     t.end();
 });
+test("clipLeft small", function(t){
+    t.equal(s.clipLeft("abcdefghijkl", 25), "abcdefghijkl");
+    t.end();
+});
+test("clipLeft equal", function(t){
+    t.equal(s.clipLeft("abcde", 5), "abcde");
+    t.end();
+});
