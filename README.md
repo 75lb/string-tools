@@ -16,6 +16,7 @@ Some useful functions for working with strings
 * [fill(fillWith, len)](#module_string-ting.fill)
 * [padRight(input, width, [padWith])](#module_string-ting.padRight)
 * [repeat(input, times)](#module_string-ting.repeat)
+* [clipLeft(input, width, [prefix])](#module_string-ting.clipLeft)
 
 
 
@@ -96,6 +97,21 @@ returns the input string repeated the specified number of times
 
 - input `string` input string to repeat  
 - times `number` the number of times to repeat  
+
+
+**Returns**: `string`
+
+
+
+
+<a name="module_string-ting.clipLeft"></a>
+###clipLeft(input, width, [prefix])
+returns the input string clipped from the left side in order to meet the specified `width`
+
+
+- input `string` input string to repeat  
+- width `number` the desired final width  
+- [prefix] `string` the prefix to replace the clipped region  
 
 
 **Returns**: `string`
