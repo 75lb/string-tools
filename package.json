@@ -1,5 +1,5 @@
 {
-  "name": "string-ting",
+  "name": "string-tools",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.1.4",
   "description": "Some useful functions for working with strings",
