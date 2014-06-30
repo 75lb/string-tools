@@ -3,10 +3,16 @@
 [![Build Status](https://travis-ci.org/75lb/string-tools.svg?branch=master)](https://travis-ci.org/75lb/string-tools)
 [![Dependency Status](https://david-dm.org/75lb/string-tools.svg)](https://david-dm.org/75lb/string-tools)
 
-<a name="module_string-tools"></a>
-##string-tools
+#string-tools
+Some useful functions for working with strings.
 
-Some useful functions for working with strings
+##Install
+```sh
+$ npm install string-tools --save
+```
+
+#API Reference
+<a name="module_string-tools"></a>
 
   
 **Example**  
