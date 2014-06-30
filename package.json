@@ -10,14 +10,16 @@
     "fill",
     "pad",
     "escape",
-    "regex"
+    "regex",
+    "repeat"
   ],
   "scripts": {
     "test": "tape test/*.js",
     "lint": "jshint lib/*.js test/*.js; echo",
-    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+    "docs": "jsdoc2md --index -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
   },
   "devDependencies": {
+    "jsdoc-to-markdown": "^0.2.15",
     "tape": "^2.13.2"
   }
 }
