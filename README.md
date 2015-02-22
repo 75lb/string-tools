@@ -19,20 +19,20 @@ var s = require("string-tools");
   * [.clipLeft(input, width, [prefix])](#module_string-tools.clipLeft) ⇒ <code>string</code>
 
 <a name="module_string-tools.symbol"></a>
-## string-tools.symbol
+## s.symbol
 some cross platform symbols (`tick` and `cross`)
 
 <a name="module_string-tools.escapeRegExp"></a>
-## string-tools.escapeRegExp()
+## s.escapeRegExp()
 escape special regular expression characters
 
 **Example**  
 ```js
-> w.escapeRegExp("(.*)");
+> s.escapeRegExp("(.*)");
 '\\(\\.\\*\\)'
 ```
 <a name="module_string-tools.fill"></a>
-## string-tools.fill(fillWith, len) ⇒ <code>string</code>
+## s.fill(fillWith, len) ⇒ <code>string</code>
 Create a new string filled with the supplied character
 
 
@@ -43,13 +43,13 @@ Create a new string filled with the supplied character
 
 **Example**  
 ```js
-> w.fill("a", 10)
+> s.fill("a", 10)
 'aaaaaaaaaa'
-> w.fill("ab", 10)
+> s.fill("ab", 10)
 'aaaaaaaaaa'
 ```
 <a name="module_string-tools.padRight"></a>
-## string-tools.padRight(input, width, [padWith]) ⇒ <code>string</code>
+## s.padRight(input, width, [padWith]) ⇒ <code>string</code>
 Add padding to the right of a string
 
 
@@ -61,15 +61,15 @@ Add padding to the right of a string
 
 **Example**  
 ```js
-> w.padRight("clive", 1)
+> s.padRight("clive", 1)
 'clive'
-> w.padRight("clive", 1, "-")
+> s.padRight("clive", 1, "-")
 'clive'
-> w.padRight("clive", 10, "-")
+> s.padRight("clive", 10, "-")
 'clive-----'
 ```
 <a name="module_string-tools.repeat"></a>
-## string-tools.repeat(input, times) ⇒ <code>string</code>
+## s.repeat(input, times) ⇒ <code>string</code>
 returns the input string repeated the specified number of times
 
 
@@ -79,7 +79,7 @@ returns the input string repeated the specified number of times
 | times | <code>number</code> | the number of times to repeat |
 
 <a name="module_string-tools.clipLeft"></a>
-## string-tools.clipLeft(input, width, [prefix]) ⇒ <code>string</code>
+## s.clipLeft(input, width, [prefix]) ⇒ <code>string</code>
 returns the input string clipped from the left side in order to meet the specified `width`
 
 
