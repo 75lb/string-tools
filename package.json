@@ -16,10 +16,9 @@
   "scripts": {
     "test": "tape test/*.js",
     "lint": "jshint lib/*.js test/*.js; echo",
-    "docs": "jsdoc2md --index --skip-heading -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+    "docs": "jsdoc2md -d 1 -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^0.2.15",
-    "tape": "^2.13.2"
+    "tape": "^3.5"
   }
 }

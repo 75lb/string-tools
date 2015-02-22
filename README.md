@@ -3,37 +3,27 @@
 [![Build Status](https://travis-ci.org/75lb/string-tools.svg?branch=master)](https://travis-ci.org/75lb/string-tools)
 [![Dependency Status](https://david-dm.org/75lb/string-tools.svg)](https://david-dm.org/75lb/string-tools)
 
-#string-tools
-Some useful functions for working with strings.
-
-##Install
-```sh
-$ npm install string-tools --save
-```
-
-#API Reference
 <a name="module_string-tools"></a>
-
-  
+# string-tools
 **Example**  
 ```js
 var s = require("string-tools");
 ```
-**Symbols**  
-  * [s.symbol](#module_string-tools.symbol)
-  * [s.escapeRegExp()](#module_string-tools.escapeRegExp)
-  * [s.fill(fillWith, len)](#module_string-tools.fill)
-  * [s.padRight(input, width, [padWith])](#module_string-tools.padRight)
-  * [s.repeat(input, times)](#module_string-tools.repeat)
-  * [s.clipLeft(input, width, [prefix])](#module_string-tools.clipLeft)
+
+* [string-tools](#module_string-tools)
+  * [.symbol](#module_string-tools.symbol)
+  * [.escapeRegExp()](#module_string-tools.escapeRegExp)
+  * [.fill(fillWith, len)](#module_string-tools.fill) ⇒ <code>string</code>
+  * [.padRight(input, width, [padWith])](#module_string-tools.padRight) ⇒ <code>string</code>
+  * [.repeat(input, times)](#module_string-tools.repeat) ⇒ <code>string</code>
+  * [.clipLeft(input, width, [prefix])](#module_string-tools.clipLeft) ⇒ <code>string</code>
 
 <a name="module_string-tools.symbol"></a>
-###s.symbol
+## string-tools.symbol
 some cross platform symbols (`tick` and `cross`)
 
-  
 <a name="module_string-tools.escapeRegExp"></a>
-###s.escapeRegExp()
+## string-tools.escapeRegExp()
 escape special regular expression characters
 
 **Example**  
@@ -42,15 +32,15 @@ escape special regular expression characters
 '\\(\\.\\*\\)'
 ```
 <a name="module_string-tools.fill"></a>
-###s.fill(fillWith, len)
+## string-tools.fill(fillWith, len) ⇒ <code>string</code>
 Create a new string filled with the supplied character
 
-**Params**
 
-- fillWith `string` - the fill character
-- len `number` - the length of the output string
+| Param | Type | Description |
+| --- | --- | --- |
+| fillWith | <code>string</code> | the fill character |
+| len | <code>number</code> | the length of the output string |
 
-**Returns**: `string`  
 **Example**  
 ```js
 > w.fill("a", 10)
@@ -59,16 +49,16 @@ Create a new string filled with the supplied character
 'aaaaaaaaaa'
 ```
 <a name="module_string-tools.padRight"></a>
-###s.padRight(input, width, [padWith])
+## string-tools.padRight(input, width, [padWith]) ⇒ <code>string</code>
 Add padding to the right of a string
 
-**Params**
 
-- input `string` - the string to pad
-- width `number` - the desired final width
-- [padWith=&quot; &quot;] `string` - the padding character
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| input | <code>string</code> |  | the string to pad |
+| width | <code>number</code> |  | the desired final width |
+| [padWith] | <code>string</code> | <code>&quot;\&quot; \&quot;&quot;</code> | the padding character |
 
-**Returns**: `string`  
 **Example**  
 ```js
 > w.padRight("clive", 1)
@@ -79,23 +69,24 @@ Add padding to the right of a string
 'clive-----'
 ```
 <a name="module_string-tools.repeat"></a>
-###s.repeat(input, times)
+## string-tools.repeat(input, times) ⇒ <code>string</code>
 returns the input string repeated the specified number of times
 
-**Params**
 
-- input `string` - input string to repeat
-- times `number` - the number of times to repeat
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>string</code> | input string to repeat |
+| times | <code>number</code> | the number of times to repeat |
 
-**Returns**: `string`  
 <a name="module_string-tools.clipLeft"></a>
-###s.clipLeft(input, width, [prefix])
+## string-tools.clipLeft(input, width, [prefix]) ⇒ <code>string</code>
 returns the input string clipped from the left side in order to meet the specified `width`
 
-**Params**
 
-- input `string` - input string to repeat
-- width `number` - the desired final width
-- [prefix=...] `string` - the prefix to replace the clipped region
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| input | <code>string</code> |  | input string to repeat |
+| width | <code>number</code> |  | the desired final width |
+| [prefix] | <code>string</code> | <code>&quot;...&quot;</code> | the prefix to replace the clipped region |
 
-**Returns**: `string`  
+
