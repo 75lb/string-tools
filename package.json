@@ -5,6 +5,7 @@
   "description": "Some useful functions for working with strings",
   "repository": "https://github.com/75lb/string-tools.git",
   "main": "./lib/string-tools.js",
+  "license": "MIT",
   "keywords": [
     "string",
     "fill",
@@ -19,6 +20,6 @@
     "docs": "jsdoc2md -d 1 -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
   },
   "devDependencies": {
-    "tape": "^3.5"
+    "tape": "^4"
   }
 }
