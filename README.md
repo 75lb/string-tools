@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/75lb/string-tools.svg)](https://david-dm.org/75lb/string-tools)
 
 <a name="module_string-tools"></a>
-# string-tools
+## string-tools
 **Example**  
 ```js
 var s = require("string-tools");
@@ -19,12 +19,12 @@ var s = require("string-tools");
   * [.clipLeft(input, width, [prefix])](#module_string-tools.clipLeft) ⇒ <code>string</code>
 
 <a name="module_string-tools.symbol"></a>
-## s.symbol
+### s.symbol
 some cross platform symbols (`tick` and `cross`)
 
 **Kind**: static property of <code>[string-tools](#module_string-tools)</code>  
 <a name="module_string-tools.escapeRegExp"></a>
-## s.escapeRegExp()
+### s.escapeRegExp()
 escape special regular expression characters
 
 **Kind**: static method of <code>[string-tools](#module_string-tools)</code>  
@@ -34,7 +34,7 @@ escape special regular expression characters
 '\\(\\.\\*\\)'
 ```
 <a name="module_string-tools.fill"></a>
-## s.fill(fillWith, len) ⇒ <code>string</code>
+### s.fill(fillWith, len) ⇒ <code>string</code>
 Create a new string filled with the supplied character
 
 **Kind**: static method of <code>[string-tools](#module_string-tools)</code>  
@@ -52,7 +52,7 @@ Create a new string filled with the supplied character
 'aaaaaaaaaa'
 ```
 <a name="module_string-tools.padRight"></a>
-## s.padRight(input, width, [padWith]) ⇒ <code>string</code>
+### s.padRight(input, width, [padWith]) ⇒ <code>string</code>
 Add padding to the right of a string
 
 **Kind**: static method of <code>[string-tools](#module_string-tools)</code>  
@@ -73,7 +73,7 @@ Add padding to the right of a string
 'clive-----'
 ```
 <a name="module_string-tools.repeat"></a>
-## s.repeat(input, times) ⇒ <code>string</code>
+### s.repeat(input, times) ⇒ <code>string</code>
 returns the input string repeated the specified number of times
 
 **Kind**: static method of <code>[string-tools](#module_string-tools)</code>  
@@ -84,7 +84,7 @@ returns the input string repeated the specified number of times
 | times | <code>number</code> | the number of times to repeat |
 
 <a name="module_string-tools.clipLeft"></a>
-## s.clipLeft(input, width, [prefix]) ⇒ <code>string</code>
+### s.clipLeft(input, width, [prefix]) ⇒ <code>string</code>
 returns the input string clipped from the left side in order to meet the specified `width`
 
 **Kind**: static method of <code>[string-tools](#module_string-tools)</code>  
